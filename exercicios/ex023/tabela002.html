@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,23 +20,41 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         td.num {
             text-align: right;
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(even) { /* usar odd para linhas impares */
+            background-color: lightgray;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -150,10 +169,16 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td class="num"><strong>212.583.720</strong></td>
                 </tr>
             </tfoot>
         </table>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta iste nobis officia quis, saepe vel facilis laudantium illo eius praesentium architecto perferendis, libero sed voluptate, magnam maiores. Asperiores, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, hic. Laborum amet quam tempora, labore ea sed quae! Autem porro quo voluptatum distinctio eum accusamus nobis eaque corrupti doloremque pariatur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, voluptatem officia! Ipsum voluptatibus, qui unde voluptate sit quibusdam delectus officia fugit accusamus eligendi animi iste eum reprehenderit itaque perspiciatis sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut id quibusdam fugiat quisquam magni labore assumenda dignissimos placeat dicta deleniti laboriosam, quaerat nulla incidunt eum optio. Recusandae, iste accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta iste nobis officia quis, saepe vel facilis laudantium illo eius praesentium architecto perferendis, libero sed voluptate, magnam maiores. Asperiores, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, hic. Laborum amet quam tempora, labore ea sed quae! Autem porro quo voluptatum distinctio eum accusamus nobis eaque corrupti doloremque pariatur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, voluptatem officia! Ipsum voluptatibus, qui unde voluptate sit quibusdam delectus officia fugit accusamus eligendi animi iste eum reprehenderit itaque perspiciatis sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut id quibusdam fugiat quisquam magni labore assumenda dignissimos placeat dicta deleniti laboriosam, quaerat nulla incidunt eum optio. Recusandae, iste accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta iste nobis officia quis, saepe vel facilis laudantium illo eius praesentium architecto perferendis, libero sed voluptate, magnam maiores. Asperiores, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, hic. Laborum amet quam tempora, labore ea sed quae! Autem porro quo voluptatum distinctio eum accusamus nobis eaque corrupti doloremque pariatur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, voluptatem officia! Ipsum voluptatibus, qui unde voluptate sit quibusdam delectus officia fugit accusamus eligendi animi iste eum reprehenderit itaque perspiciatis sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut id quibusdam fugiat quisquam magni labore assumenda dignissimos placeat dicta deleniti laboriosam, quaerat nulla incidunt eum optio. Recusandae, iste accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta iste nobis officia quis, saepe vel facilis laudantium illo eius praesentium architecto perferendis, libero sed voluptate, magnam maiores. Asperiores, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, hic. Laborum amet quam tempora, labore ea sed quae! Autem porro quo voluptatum distinctio eum accusamus nobis eaque corrupti doloremque pariatur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, voluptatem officia! Ipsum voluptatibus, qui unde voluptate sit quibusdam delectus officia fugit accusamus eligendi animi iste eum reprehenderit itaque perspiciatis sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut id quibusdam fugiat quisquam magni labore assumenda dignissimos placeat dicta deleniti laboriosam, quaerat nulla incidunt eum optio. Recusandae, iste accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta iste nobis officia quis, saepe vel facilis laudantium illo eius praesentium architecto perferendis, libero sed voluptate, magnam maiores. Asperiores, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, hic. Laborum amet quam tempora, labore ea sed quae! Autem porro quo voluptatum distinctio eum accusamus nobis eaque corrupti doloremque pariatur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, voluptatem officia! Ipsum voluptatibus, qui unde voluptate sit quibusdam delectus officia fugit accusamus eligendi animi iste eum reprehenderit itaque perspiciatis sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut id quibusdam fugiat quisquam magni labore assumenda dignissimos placeat dicta deleniti laboriosam, quaerat nulla incidunt eum optio. Recusandae, iste accusantium.</p>
+        
 </body>
 </html>
